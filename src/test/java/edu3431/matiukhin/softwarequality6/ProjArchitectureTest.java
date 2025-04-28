@@ -122,8 +122,6 @@ public class ProjArchitectureTest {
                 .beAnnotatedWith(Autowired.class)
                 .check(applicationClasses);
     }
-
-
     @Test
     void modelFieldsShoudBePrivate() {
         fields()
@@ -133,7 +131,6 @@ public class ProjArchitectureTest {
                 .because("smth")
                 .check(applicationClasses);
     }
-
     @Test
     void layersShouldHaveOnlyOneDirectionDependencies() {
         noClasses()
